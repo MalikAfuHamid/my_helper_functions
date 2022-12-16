@@ -1,4 +1,8 @@
 import tensorflow as tf
+import itertools
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.metrics import confusion_matrix
 
 #LOSS CURVES FUCTION
 def plot_loss_curves(history):
