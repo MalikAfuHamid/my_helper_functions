@@ -1,3 +1,4 @@
+import tensorflow as tf
 
 #LOSS CURVES FUCTION
 def plot_loss_curves(history):
