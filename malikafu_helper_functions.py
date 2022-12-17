@@ -179,3 +179,20 @@ def calculate_results(y_true, y_pred):
                   "recall": model_recall,
                   "f1": model_f1}
   return model_results
+
+
+#CALCULATE RESULTS
+def calculate_results(y_true, y_pred):
+
+  # Calculate model accuracy
+  model_accuracy = accuracy_score(y_true, y_pred) * 100
+
+  # Calcualte model precision, recall, and F1-Score
+  model_precision, model_recall, model_f1, _ = precision_recall_fscore_support(y_true, y_pred, average = 'weighted')
+
+  model_results = {'accuracy': model_accuracy,
+                   'precision': model_precision,
+                   'recall': model_recall,
+                   'f1': model_f1}
+
+  return model_results
