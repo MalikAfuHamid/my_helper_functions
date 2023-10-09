@@ -20,6 +20,7 @@ def plot_loss_curves(history):
   plt.plot(epochs, val_loss, label = 'val_loss')
   plt.title('Loss')
   plt.xlabel('Epochs')
+  plt.ylabel('score')
   plt.legend()
 
   # Plot accuracy
@@ -28,6 +29,7 @@ def plot_loss_curves(history):
   plt.plot(epochs, val_accuracy, label='val_accuracy')
   plt.title('Accuracy')
   plt.xlabel('Epochs')
+  plt.ylabel('score')
   plt.legend();
 
 
